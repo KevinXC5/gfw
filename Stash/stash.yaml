@@ -50,7 +50,7 @@ proxy-providers:
 
   MyProxy: &MyProxy #建立锚点
      #多机场用户请使用Sub-Store生成自己的订阅地址并替换以下url地址
-    url: https://n3.leensasf.us/api/v1/client/subscribe?token=fd5da35bd498f7ffb3e1ddfa3d71380b
+    url: https://sub.store/download/collection/MySub
     type: http
     path: ./all.yaml
     interval: 86400
