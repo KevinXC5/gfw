@@ -1,5 +1,5 @@
 # KevinXC
-# Update: 2022.10.24
+# Update: 2022.10.25
 # ------------------
 # 下载配置后，需要自行添加机场订阅链接
 # 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
@@ -18,8 +18,9 @@ dns:
   listen: 0.0.0.0:53
   #DNS服务器
   default-nameserver:
+    - 119.29.29.29
     - 223.5.5.5
-    - 114.114.114.114
+    - system
   #DoH服务器
   nameserver:
     - https://dns.alidns.com/dns-query
@@ -53,10 +54,10 @@ proxy-providers:
     url: https://sub.store/download/collection/MySub
     type: http
     path: ./all.yaml
-    interval: 86400
+    interval: 3600
     health-check:
       enable: true
-      interval: 3600
+      interval: 600
       url: http://cp.cloudflare.com/generate_204
       
   #美国节点
@@ -136,6 +137,13 @@ proxy-groups:
     - Proxy
     - DIRECT
   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png
+
+- name: Parallels Desktop
+  type: select
+  proxies:
+    - REJECT
+    - Proxy
+    - DIRECT
 
 - name: Global
   type: select
@@ -299,6 +307,7 @@ proxy-groups:
 
 #远程规则集合声明
 rule-providers:
+
   Adblock-rules:
     type: http
     path: ./ruleset/Advertising_Classical.yaml
@@ -420,6 +429,17 @@ rule-providers:
 
 #分流规则引用
 rules:
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR,fe80::/10,DIRECT
+- IP-CIDR,119.28.28.28/32,DIRECT
+- IP-CIDR,182.254.116.0/24,DIRECT
+
+- DOMAIN-KEYWORD,parallels,Parallels Desktop
 - RULE-SET,Adblock-rules,Adblock
 - RULE-SET,Netflix-rules,Netflix
 - RULE-SET,Disney-rules,Disney+
@@ -435,14 +455,6 @@ rules:
 - RULE-SET,Mainland-rules,Mainland
 - RULE-SET,MainlandIP-rules,Mainland
 - RULE-SET,Global-rules,Global
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,100.64.0.0/10,DIRECT
-- IP-CIDR,224.0.0.0/4,DIRECT
-- IP-CIDR,fe80::/10,DIRECT
-- IP-CIDR,119.28.28.28/32,DIRECT
-- IP-CIDR,182.254.116.0/24,DIRECT
+
 - GEOIP,CN,DIRECT
 - MATCH,Final
