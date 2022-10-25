@@ -14,7 +14,7 @@ external-controller: 127.0.0.1:9090
 
 #DNS设置
 dns:
-  enable: true
+  enable: false
   listen: 0.0.0.0:53
   #DNS服务器
   default-nameserver:
