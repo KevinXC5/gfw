@@ -130,13 +130,13 @@ proxy-groups:
   use:
     - MyProxy-SG
 
-- name: Adblock
-  type: select
-  proxies:
-    - REJECT
-    - Proxy
-    - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png
+# - name: Adblock
+#   type: select
+#   proxies:
+#     - REJECT
+#     - Proxy
+#     - DIRECT
+#   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png
 
 - name: Parallels Desktop
   type: select
