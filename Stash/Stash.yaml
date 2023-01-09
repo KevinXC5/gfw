@@ -1,5 +1,5 @@
 # KevinXC
-# Update: 2022.11.01
+# Update: 2023.01.09
 # ------------------
 # 下载配置后，需要自行添加机场订阅链接
 # 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
@@ -76,9 +76,9 @@ proxy-providers:
     filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
   
   #台湾节点
-  MyProxy-TW:
-    <<: *MyProxy #引用锚点内容
-    filter: "台|台湾|TW"
+  #MyProxy-TW:
+  #  <<: *MyProxy #引用锚点内容
+  #  filter: "台|台湾|TW"
   
   #新加坡节点
   MyProxy-SG:
@@ -118,11 +118,11 @@ proxy-groups:
   use:
     - MyProxy-JP
 
-- name: TW
-  type: select
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
-  use:
-    - MyProxy-TW
+#- name: TW
+#  type: select
+#  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
+#  use:
+#    - MyProxy-TW
 
 - name: SG
   type: select
@@ -151,7 +151,7 @@ proxy-groups:
   - HK
   - US
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -163,7 +163,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -175,7 +175,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -187,7 +187,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -199,7 +199,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -211,7 +211,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -222,7 +222,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - HK
-  - TW
+  #- TW
   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 
 - name: Telegram
@@ -231,7 +231,7 @@ proxy-groups:
   - HK
   - US
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -243,7 +243,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -256,7 +256,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
@@ -267,7 +267,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   - DIRECT
@@ -280,7 +280,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
@@ -292,7 +292,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  - TW
+  #- TW
   - SG
   - Proxy
   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
