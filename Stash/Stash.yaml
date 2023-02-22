@@ -438,6 +438,7 @@ rules:
 - IP-CIDR,fe80::/10,DIRECT
 - IP-CIDR,119.28.28.28/32,DIRECT
 - IP-CIDR,182.254.116.0/24,DIRECT
+- DOMAIN-KEYWORD,chinamobile,DIRECT
 
 - DOMAIN-KEYWORD,parallels,Parallels Desktop
 # - RULE-SET,Adblock-rules,Adblock
