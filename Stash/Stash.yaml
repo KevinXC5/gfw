@@ -1,5 +1,5 @@
 # KevinXC
-# Update: 2023.01.09
+# Update: 2023.09.15
 # ------------------
 # 下载配置后，需要自行添加机场订阅链接
 # 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
@@ -381,11 +381,11 @@ rule-providers:
 
   Apple-rules:
     type: http
-    path: ./ruleset/Apple.yaml
+    path: ./ruleset/Apple_Classical.yaml
     behavior: classical
     interval: 86400
     name: Apple
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple_Classical.yaml
 
   Google-rules:
     type: http
@@ -405,11 +405,11 @@ rule-providers:
 
   Mainland-rules:
     type: http
-    path: ./ruleset/China.yaml
+    path: ./ruleset/China_Classical.yaml
     behavior: classical
     interval: 86400
     name: Mainland
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China_Classical.yaml
 
   MainlandIP-rules:
     type: http
