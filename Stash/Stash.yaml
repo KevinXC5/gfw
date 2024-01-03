@@ -92,41 +92,41 @@ proxy-groups:
   type: select
   use:
     - MyProxy
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
 
 - name: Auto-HK
   type: url-test
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
   use:
     - MyProxy-HK
 
 - name: US
   type: select
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
   use:
     - MyProxy-US
 
 - name: HK
   type: select
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png
   use:
     - MyProxy-HK
 
 - name: JP
   type: select
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png
   use:
     - MyProxy-JP
 
 #- name: TW
 #  type: select
-#  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
+#  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
 #  use:
 #    - MyProxy-TW
 
 - name: SG
   type: select
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
   use:
     - MyProxy-SG
 
@@ -136,7 +136,7 @@ proxy-groups:
 #     - REJECT
 #     - Proxy
 #     - DIRECT
-#   icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png
+#   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png
 
 - name: Parallels Desktop
   type: select
@@ -155,7 +155,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
 
 - name: Netflix
   type: select
@@ -167,7 +167,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
 
 - name: Disney+
   type: select
@@ -179,7 +179,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 
 - name: HBO
   type: select
@@ -191,7 +191,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 
 - name: Youtube
   type: select
@@ -203,7 +203,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 
 - name: Spotify
   type: select
@@ -215,7 +215,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 
 - name: Bilibili
   type: select
@@ -223,7 +223,7 @@ proxy-groups:
   - DIRECT
   - HK
   #- TW
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 
 - name: Telegram
   type: select
@@ -235,7 +235,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 
 - name: Twitter
   type: select
@@ -247,7 +247,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 
 - name: Apple
   type: select
@@ -259,7 +259,7 @@ proxy-groups:
   #- TW
   - SG
   - Proxy
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
 
 - name: Google
   type: select
@@ -271,7 +271,7 @@ proxy-groups:
   - SG
   - Proxy
   - DIRECT
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 
 - name: Microsoft
   type: select
@@ -283,7 +283,7 @@ proxy-groups:
   #- TW
   - SG
   - Proxy
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 
 - name: Mainland
   type: select
@@ -295,7 +295,7 @@ proxy-groups:
   #- TW
   - SG
   - Proxy
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
 
 - name: Final
   type: select
@@ -303,7 +303,7 @@ proxy-groups:
   - DIRECT
   - Auto-HK
   - Proxy
-  icon: https://ghproxy.com/https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合声明
 rule-providers:
@@ -313,7 +313,7 @@ rule-providers:
   #   path: ./ruleset/Advertising_Classical.yaml
   #   behavior: classical
   #   interval: 86400
-  #   url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
+  #   url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
 
   Netflix-rules:
     type: http
@@ -321,7 +321,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Netflix
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml
 
   Disney-rules:
     type: http
@@ -329,7 +329,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Disney
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Disney/Disney.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Disney/Disney.yaml
 
   HBO-rules:
     type: http
@@ -337,7 +337,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: HBO
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/HBO/HBO.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/HBO/HBO.yaml
 
   Youtube-rules:
     type: http
@@ -345,7 +345,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Youtube
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/YouTube/YouTube.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/YouTube/YouTube.yaml
 
   Spotify-rules:
     type: http
@@ -353,7 +353,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Spotify
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Spotify/Spotify.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Spotify/Spotify.yaml
 
   Bilibili-rules:
     type: http
@@ -361,7 +361,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Bilibili
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/BiliBili/BiliBili.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/BiliBili/BiliBili.yaml
 
   Telegram-rules:
     type: http
@@ -369,7 +369,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Telegram
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Telegram/Telegram.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Telegram/Telegram.yaml
 
   Twitter-rules:
     type: http
@@ -377,7 +377,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Twitter
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Twitter/Twitter.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Twitter/Twitter.yaml
 
   Apple-rules:
     type: http
@@ -385,7 +385,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Apple
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple.yaml
 
   Google-rules:
     type: http
@@ -393,7 +393,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Google
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Google/Google.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Google/Google.yaml
 
   Microsoft-rules:
     type: http
@@ -401,7 +401,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Microsoft
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Microsoft/Microsoft.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Microsoft/Microsoft.yaml
 
   Mainland-rules:
     type: http
@@ -409,7 +409,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Mainland
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
 
   MainlandIP-rules:
     type: http
@@ -417,7 +417,7 @@ rule-providers:
     behavior: ipcidr
     interval: 86400
     name: MainlandIP
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
 
   Global-rules:
     type: http
@@ -425,7 +425,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: Outside
-    url: https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global_Classical.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global_Classical.yaml
 
 #分流规则引用
 rules:
