@@ -1,5 +1,5 @@
 # KevinXC
-# Update: 2024.01.03
+# Update: 2024.05.27
 # ------------------
 # 下载配置后，需要自行添加机场订阅链接
 # 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
@@ -438,6 +438,7 @@ rules:
 - IP-CIDR,fe80::/10,DIRECT
 - IP-CIDR,119.28.28.28/32,DIRECT
 - IP-CIDR,182.254.116.0/24,DIRECT
+- DOMAIN-KEYWORD,chinamobile,DIRECT
 
 - DOMAIN-KEYWORD,parallels,Parallels Desktop
 # - RULE-SET,Adblock-rules,Adblock
