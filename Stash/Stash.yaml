@@ -441,6 +441,7 @@ rules:
 - IP-CIDR,182.254.116.0/24,DIRECT
 - DOMAIN-KEYWORD,chinamobile,DIRECT
 - DOMAIN-KEYWORD,cmcc,DIRECT
+- DOMAIN-KEYWORD,heclouds,DIRECT
 
 - DOMAIN-KEYWORD,parallels,Parallels Desktop
 # - RULE-SET,Adblock-rules,Adblock
