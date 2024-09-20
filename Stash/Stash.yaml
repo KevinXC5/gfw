@@ -53,8 +53,8 @@ proxy-providers:
   MyProxy: &MyProxy #建立锚点
     #多机场用户请使用Sub-Store生成自己的订阅地址并替换以下url地址
     #url: https://service-472jprl5-1322266764.sh.apigw.tencentcs.com/api/v1/client/subscribe?token=03203da7e509221c5fec5eb3807732d5
-    #url: https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false
-    url: https://linuxdo.dingyue.cc.ua/clash.yaml
+    url: https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false
+    #url: https://linuxdo.dingyue.cc.ua/clash.yaml
     type: http
     path: ./all.yaml
     interval: 3600
@@ -93,6 +93,9 @@ proxy-groups:
 
 - name: Proxy
   type: select
+  proxies: 
+    - Auto
+    - Auto-HK
   use:
     - MyProxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
