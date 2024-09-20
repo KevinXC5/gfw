@@ -99,12 +99,16 @@ proxy-groups:
 
 - name: Auto
   type: url-test
+  interval: 300
+  url: http://www.gstatic.com/generate_204
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
   use:
     - MyProxy
 
 - name: Auto-HK
   type: url-test
+  interval: 300
+  url: http://www.gstatic.com/generate_204
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
   use:
     - MyProxy-HK
