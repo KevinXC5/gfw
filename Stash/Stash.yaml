@@ -1,5 +1,5 @@
 # KevinXC
-# Update: 2024.05.27
+# Update: 2024.10.09
 # ------------------
 # 下载配置后，需要自行添加机场订阅链接
 # 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
@@ -53,11 +53,13 @@ proxy-providers:
   MyProxy: &MyProxy #建立锚点
     #多机场用户请使用Sub-Store生成自己的订阅地址并替换以下url地址
     #url: https://service-472jprl5-1322266764.sh.apigw.tencentcs.com/api/v1/client/subscribe?token=03203da7e509221c5fec5eb3807732d5
-    url: https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false
+    #url: https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false
     #url: https://linuxdo.dingyue.cc.ua/clash.yaml
+    url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
     type: http
     path: ./all.yaml
     interval: 3600
+    exclude-type: "Trojan"
     health-check:
       enable: true
       interval: 600
