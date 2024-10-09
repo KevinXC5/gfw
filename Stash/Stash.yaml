@@ -81,9 +81,9 @@ proxy-providers:
     filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
   
   #台湾节点
-  #MyProxy-TW:
-  #  <<: *MyProxy #引用锚点内容
-  #  filter: "台|台湾|TW"
+  MyProxy-TW:
+    <<: *MyProxy #引用锚点内容
+    filter: "台|台湾|TW"
   
   #新加坡节点
   MyProxy-SG:
@@ -136,11 +136,11 @@ proxy-groups:
   use:
     - MyProxy-JP
 
-#- name: TW
-#  type: select
-#  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
-#  use:
-#    - MyProxy-TW
+- name: TW
+ type: select
+ icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
+ use:
+   - MyProxy-TW
 
 - name: SG
   type: select
@@ -155,13 +155,6 @@ proxy-groups:
 #     - Proxy
 #     - DIRECT
 #   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Reject.png
-
-- name: Parallels Desktop
-  type: select
-  proxies:
-    - REJECT
-    - Proxy
-    - DIRECT
 
 - name: Global
   type: select
@@ -487,7 +480,6 @@ rules:
 - DOMAIN-KEYWORD,bing,Proxy
 - DOMAIN-KEYWORD,copilot,Proxy
 
-- DOMAIN-KEYWORD,parallels,Parallels Desktop
 # - RULE-SET,Adblock-rules,Adblock
 - RULE-SET,Netflix-rules,Netflix
 - RULE-SET,Disney-rules,Disney+
