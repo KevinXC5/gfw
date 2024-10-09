@@ -58,11 +58,11 @@ proxy-providers:
     url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
     type: http
     path: ./all.yaml
-    interval: 3600
+    interval: 300
     exclude-type: "Trojan"
     health-check:
       enable: true
-      interval: 600
+      interval: 60
       url: http://cp.cloudflare.com/generate_204
       
   #美国节点
@@ -104,7 +104,7 @@ proxy-groups:
 
 - name: Auto
   type: url-test
-  interval: 300
+  interval: 60
   url: http://www.gstatic.com/generate_204
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
   use:
@@ -112,7 +112,7 @@ proxy-groups:
 
 - name: Auto-HK
   type: url-test
-  interval: 300
+  interval: 60
   url: http://www.gstatic.com/generate_204
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
   use:
@@ -484,6 +484,7 @@ rules:
 - DOMAIN-KEYWORD,chinamobile,DIRECT
 - DOMAIN-KEYWORD,cmcc,DIRECT
 - DOMAIN-KEYWORD,heclouds,DIRECT
+- DOMAIN-KEYWORD,bing,Proxy
 
 - DOMAIN-KEYWORD,parallels,Parallels Desktop
 # - RULE-SET,Adblock-rules,Adblock
