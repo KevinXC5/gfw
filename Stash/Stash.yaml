@@ -485,6 +485,7 @@ rules:
 - DOMAIN-KEYWORD,cmcc,DIRECT
 - DOMAIN-KEYWORD,heclouds,DIRECT
 - DOMAIN-KEYWORD,bing,Proxy
+- DOMAIN-KEYWORD,copilot,Proxy
 
 - DOMAIN-KEYWORD,parallels,Parallels Desktop
 # - RULE-SET,Adblock-rules,Adblock
