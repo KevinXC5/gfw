@@ -137,10 +137,10 @@ proxy-groups:
     - MyProxy-JP
 
 - name: TW
- type: select
- icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
- use:
-   - MyProxy-TW
+  type: select
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/CN.png
+  use:
+    - MyProxy-TW
 
 - name: SG
   type: select
