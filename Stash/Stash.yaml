@@ -162,7 +162,7 @@ proxy-groups:
   - HK
   - US
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -176,7 +176,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -190,7 +190,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -204,7 +204,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -218,7 +218,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -232,7 +232,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -245,7 +245,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - HK
-  #- TW
+  - TW
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 
 - name: Telegram
@@ -254,7 +254,7 @@ proxy-groups:
   - HK
   - US
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -268,7 +268,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -283,7 +283,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -296,7 +296,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -311,7 +311,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
@@ -325,7 +325,7 @@ proxy-groups:
   - US
   - HK
   - JP
-  #- TW
+  - TW
   - SG
   - Proxy
   - Auto
