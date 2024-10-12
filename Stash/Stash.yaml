@@ -59,7 +59,7 @@ proxy-providers:
     type: http
     path: ./all.yaml
     interval: 300
-    #exclude-type: "Trojan"
+    exclude-type: "Trojan"
     health-check:
       enable: true
       interval: 60
