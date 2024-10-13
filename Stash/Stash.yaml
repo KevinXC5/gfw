@@ -1,5 +1,5 @@
 # KevinXC
-# Update: 2024.10.09
+# Update: 2024.10.13
 # ------------------
 # 下载配置后，需要自行添加机场订阅链接
 # 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
@@ -8,41 +8,10 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
-mode: Rule
+mode: rule
 log-level: silent
 ipv6: true
 external-controller: 127.0.0.1:9090
-
-#DNS设置
-dns:
-  enable: false
-  listen: 0.0.0.0:53
-  #DNS服务器
-  default-nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-    - 114.114.114.114
-  #DoH服务器
-  nameserver:
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  #列表中的域名将不会被解析为fake ip，这些域名相关的解析请求将会返回它们真实的IP地址
-  fake-ip-filter:
-    - '*.lan'
-    - localhost.ptlogin2.qq.com
-    - '+.srv.nintendo.net'
-    - '+.stun.playstation.net'
-    - '+.msftconnecttest.com'
-    - '+.msftncsi.com'
-    - '+.xboxlive.com'
-    - 'msftconnecttest.com'
-    - 'xbox.*.microsoft.com'
-    - '*.battlenet.com.cn'
-    - '*.battlenet.com'
-    - '*.blzstatic.cn'
-    - '*.battle.net'
 
 #本地代理
 proxies:
@@ -55,7 +24,7 @@ proxy-providers:
     #url: https://service-472jprl5-1322266764.sh.apigw.tencentcs.com/api/v1/client/subscribe?token=03203da7e509221c5fec5eb3807732d5
     #url: https://api.2c.lol/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgo4sharing%2Fsub%2Fmain%2Fsub.yaml&insert=false
     url: https://linuxdo.dingyue.cc.ua/clash.yaml
-    #url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+    #url: https://ghp.ci/https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
     type: http
     path: ./all.yaml
     interval: 300
@@ -159,12 +128,12 @@ proxy-groups:
 - name: Global
   type: select
   proxies:
+  - Proxy
   - HK
   - US
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -173,12 +142,12 @@ proxy-groups:
 - name: Netflix
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -187,12 +156,12 @@ proxy-groups:
 - name: Disney+
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -201,12 +170,12 @@ proxy-groups:
 - name: HBO
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -215,12 +184,12 @@ proxy-groups:
 - name: Youtube
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
-  - SG
-  - Proxy
+  - SG 
   - Auto
   - Auto-HK
   - DIRECT
@@ -229,12 +198,12 @@ proxy-groups:
 - name: Spotify
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -244,6 +213,7 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - Proxy
   - HK
   - TW
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
@@ -251,12 +221,12 @@ proxy-groups:
 - name: Telegram
   type: select
   proxies:
+  - Proxy
   - HK
   - US
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -265,12 +235,12 @@ proxy-groups:
 - name: Twitter
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -280,12 +250,12 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
@@ -293,12 +263,12 @@ proxy-groups:
 - name: Google
   type: select
   proxies:
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   - DIRECT
@@ -308,12 +278,12 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
@@ -322,12 +292,12 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - Proxy
   - US
   - HK
   - JP
   - TW
   - SG
-  - Proxy
   - Auto
   - Auto-HK
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
@@ -336,9 +306,9 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - Proxy
   - Auto
   - Auto-HK
-  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合声明
@@ -348,14 +318,14 @@ rule-providers:
   #   type: http
   #   path: ./ruleset/Advertising_Classical.yaml
   #   behavior: classical
-  #   interval: 86400
+  #   interval: 14400
   #   url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
 
   Netflix-rules:
     type: http
     path: ./ruleset/Netflix.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Netflix
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml
 
@@ -363,7 +333,7 @@ rule-providers:
     type: http
     path: ./ruleset/Disney.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Disney
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Disney/Disney.yaml
 
@@ -371,7 +341,7 @@ rule-providers:
     type: http
     path: ./ruleset/HBO.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: HBO
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/HBO/HBO.yaml
 
@@ -379,7 +349,7 @@ rule-providers:
     type: http
     path: ./ruleset/YouTube.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Youtube
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/YouTube/YouTube.yaml
 
@@ -387,7 +357,7 @@ rule-providers:
     type: http
     path: ./ruleset/Spotify.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Spotify
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Spotify/Spotify.yaml
 
@@ -395,7 +365,7 @@ rule-providers:
     type: http
     path: ./ruleset/BiliBili.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Bilibili
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/BiliBili/BiliBili.yaml
 
@@ -403,7 +373,7 @@ rule-providers:
     type: http
     path: ./ruleset/Telegram.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Telegram
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Telegram/Telegram.yaml
 
@@ -411,7 +381,7 @@ rule-providers:
     type: http
     path: ./ruleset/Twitter.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Twitter
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Twitter/Twitter.yaml
 
@@ -419,7 +389,7 @@ rule-providers:
     type: http
     path: ./ruleset/Apple.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Apple
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple.yaml
 
@@ -427,7 +397,7 @@ rule-providers:
     type: http
     path: ./ruleset/Google.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Google
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Google/Google.yaml
 
@@ -435,7 +405,7 @@ rule-providers:
     type: http
     path: ./ruleset/Microsoft.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Microsoft
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Microsoft/Microsoft.yaml
 
@@ -443,7 +413,7 @@ rule-providers:
     type: http
     path: ./ruleset/China.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Mainland
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
 
@@ -451,7 +421,7 @@ rule-providers:
     type: http
     path: ./ruleset/ChinaIPs_IP.yaml
     behavior: ipcidr
-    interval: 86400
+    interval: 14400
     name: MainlandIP
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
 
@@ -459,7 +429,7 @@ rule-providers:
     type: http
     path: ./ruleset/Global_Classical.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: Outside
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global_Classical.yaml
 
