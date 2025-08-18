@@ -27,32 +27,32 @@ proxy-providers:
   #美国节点
   MyProxy-US:
     <<: *MyProxy #引用锚点内容
-    #filter: "美|美国|\U0001F1FA\U0001F1F8|US|us"
-    filter: "(美|美国|\U0001F1FA\U0001F1F8|US|us)(?=.*IEPL)"
+    filter: "美|美国|\U0001F1FA\U0001F1F8|US|us"
+    #filter: "(美|美国|\U0001F1FA\U0001F1F8|US|us)(?=.*IEPL)"
   
   #香港节点
   MyProxy-HK:
     <<: *MyProxy #引用锚点内容
-    #filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong"
-    filter: "(HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong)(?=.*IEPL)"
+    filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong"
+    #filter: "(HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong)(?=.*IEPL)"
   
   #日本节点
   MyProxy-JP:
     <<: *MyProxy #引用锚点内容
-    #filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
-    filter: "(日|日本|东京|\U0001F1EF\U0001F1F5|JP)(?=.*IEPL)"
+    filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
+    #filter: "(日|日本|东京|\U0001F1EF\U0001F1F5|JP)(?=.*IEPL)"
   
   #台湾节点
   MyProxy-TW:
     <<: *MyProxy #引用锚点内容
-    #filter: "台|台湾|TW"
-    filter: "(台|台湾|TW)(?=.*IEPL)"
+    filter: "台|台湾|TW"
+    #filter: "(台|台湾|TW)(?=.*IEPL)"
   
   #新加坡节点
   MyProxy-SG:
     <<: *MyProxy #引用锚点内容
-    #filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
-    filter: "(城|新|新加坡|\U0001F1F8\U0001F1EC|SG)(?=.*IEPL)"
+    filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
+    #filter: "(城|新|新加坡|\U0001F1F8\U0001F1EC|SG)(?=.*IEPL)"
   
 #策略组
 proxy-groups:
