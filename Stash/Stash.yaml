@@ -146,6 +146,34 @@ proxy-groups:
       - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
 
+  - name: Gemini
+    type: select
+    proxies:
+      - Proxy
+      - US
+      - HK
+      - JP
+      - TW
+      - SG
+      - Auto
+      - Auto-HK
+      - DIRECT
+    icon: https://raw.githubusercontent.com/KevinXC5/gfw/main/assets/icons/Gemini.png
+
+  - name: Anthropic
+    type: select
+    proxies:
+      - Proxy
+      - US
+      - HK
+      - JP
+      - TW
+      - SG
+      - Auto
+      - Auto-HK
+      - DIRECT
+    icon: https://raw.githubusercontent.com/KevinXC5/gfw/main/assets/icons/Claude.png
+
   - name: Netflix
     type: select
     proxies:
@@ -331,9 +359,25 @@ rule-providers:
     type: http
     path: ./ruleset/OpenAI.yaml
     behavior: classical
-    interval: 86400
+    interval: 14400
     name: OpenAI
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/OpenAI/OpenAI.yaml
+
+  Gemini-rules:
+    type: http
+    path: ./ruleset/Gemini.yaml
+    behavior: classical
+    interval: 14400
+    name: Gemini
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.yaml
+
+  Anthropic-rules:
+    type: http
+    path: ./ruleset/Anthropic.yaml
+    behavior: classical
+    interval: 14400
+    name: Anthropic
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Anthropic/Anthropic.yaml
 
   Netflix-rules:
     type: http
@@ -466,6 +510,8 @@ rules:
 
   # - RULE-SET,Adblock-rules,Adblock
   - RULE-SET,OpenAI-rules,OpenAI
+  - RULE-SET,Gemini-rules,Gemini
+  - RULE-SET,Anthropic-rules,Anthropic
   - RULE-SET,Netflix-rules,Netflix
   - RULE-SET,Disney-rules,Disney+
   - RULE-SET,HBO-rules,HBO
@@ -483,4 +529,3 @@ rules:
 
   - GEOIP,CN,DIRECT
   - MATCH,Final
-
